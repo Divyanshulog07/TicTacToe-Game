@@ -1,0 +1,93 @@
+.menu > a.active {
+  color: #656565;
+  border-bottom: 2px solid #656565;
+}
+
+.blocked {
+  border-right: 5px solid lightgray;
+}
+
+.blocked:last-child {
+  border-right: none;
+}
+
+.row {
+  border-bottom: 5px solid lightgray;
+}
+
+.row:last-child {
+  border-bottom: none;
+}
+
+.menu-link {
+  cursor: pointer;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #d1d5db;
+  transition: all 0.3s ease-in-out;
+  color: #9ca3af;
+  text-decoration: none;
+  margin-right: 1.25rem;
+}
+
+.menu-link:hover {
+  color: #4b5563;
+  border-color: #4b5563;
+}
+
+.background-images img {
+  position: absolute;
+}
+
+.img1 {
+  top: 0;
+  left: 0;
+}
+.img2 {
+  top: -1.5rem;
+  left: 575px;
+}
+.img3 {
+  top: 15rem;
+  left: 14rem;
+}
+.img4 {
+  top: 0;
+  right: 0;
+}
+.img5 {
+  top: 15rem;
+  right: 15rem;
+}
+.img6 {
+  bottom: 0;
+  left: 0;
+}
+.img7 {
+  bottom: 0;
+  right: 0;
+}
+
+/* Mobile and Tablet View */
+@media (max-width: 768px) {
+  .background-images img {
+    opacity: 0.2; /* Reduce visibility of images */
+  }
+  .img1,
+  .img2,
+  .img3,
+  .img4,
+  .img5,
+  .img6,
+  .img7 {
+    display: none;
+  }
+}
+
+/* Tablet View */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .img2,
+  .img3,
+  .img5 {
+    display: none; /* Hide some images to reduce clutter */
+  }
+}
